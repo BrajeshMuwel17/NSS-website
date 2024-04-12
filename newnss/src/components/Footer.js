@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="NSS-content">
             <p>The symbol of the NSS is based on the ‘Rath’ wheel of the Konark Sun Temple situated in Orissa. These giant wheels of the Sun Temple portray the cycle of creation,preservation and release, and signify the movement in life across time and space. It stands for community as well as change and implies the continuous striving of National Service Scheme for social transformation & upliftment.</p>
           </div>
-          <div className="NSS-logo">
+          <div className="symbol-logo">
             <img src='/images/symbol.jpg' alt="ok" />
           </div>
         </div>

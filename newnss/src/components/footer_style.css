@@ -32,6 +32,7 @@
   justify-content: space-around;
   /* border: 2px solid black; */
   gap: 5%;
+  padding:3%;
 }
 .Container:hover{
   box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
@@ -54,12 +55,18 @@
   margin-top: 2%;
   margin-bottom: 2%;
 }
+.motto-logo img{
+  border-radius: 5%;
+}
 
-.NSS-logo{
+.NSS-logo , .symbol-logo{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 5%;
+}
+.symbol-logo img{
+  border-radius: 5%;
 }
 
 .NSS-logo img{
@@ -98,5 +105,12 @@
     width: 70%;
     margin-top: 5%;
     align-self: center;
+  } 
+  .motto-logo img {
+    border-radius: 5%;
   }
+   .symbol-logo img{
+    border-radius: 5%;
+    width: 70%;
+   }
 }
