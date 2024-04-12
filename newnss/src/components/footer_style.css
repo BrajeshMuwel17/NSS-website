@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* background-color: #FFF7F1; */
+}
+
+.About{
+  font-size: 5rem;
+  text-align: center;
+  height: 8rem;
+}
+
+.Container{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius:15px;
+}
+
+.Heading{
+  font-size: 2rem;
+  margin-top: 2%;
+}
+
+.container-content, .container-content1{
+  /* margin-top: 3em; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 2px solid black; */
+  gap: 5%;
+  padding:3%;
+}
+.Container:hover{
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+  background-color: #FFF7F1;
+
+}
+
+.NSS-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 45%; */
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.motto-logo {
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.motto-logo img{
+  border-radius: 5%;
+}
+
+.NSS-logo , .symbol-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+}
+.symbol-logo img{
+  border-radius: 5%;
+}
+
+.NSS-logo img{
+  width: 90%;
+  min-width: 200px;
+}
+
+@media (max-width: 1000px) {
+  .container-content{
+    flex-direction: column-reverse;
+  }
+  .container-content1{
+    flex-direction: column;
+  }
+  .NSS-content , .motto-content{
+    align-self: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+  }
+  .Container{
+    margin-top: 8%;
+  }
+  .NSS-logo {
+    width: 30%;
+    margin-top: 5%;
+    align-self: center;
+  }
+  .NSS-logo img {
+    min-width: 100px;
+    max-width: 200px;
+  }
+  .motto-logo{
+    width: 70%;
+    margin-top: 5%;
+    align-self: center;
+  } 
+  .motto-logo img {
+    border-radius: 5%;
+  }
+   .symbol-logo img{
+    border-radius: 5%;
+    width: 70%;
+   }
+}
