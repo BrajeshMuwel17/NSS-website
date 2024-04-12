@@ -16,6 +16,8 @@ import banner from "../images/banner.jpg";
 import nsslogo from "../images/logo.png";
 import newgif from "../images/new.gif"
 
+
+
 import { ThemeProvider, createTheme, useTheme } from "@mui/material/styles";
 
 const pages = ["Objectives", "Activities", "Our Team", "About", "Contact"];

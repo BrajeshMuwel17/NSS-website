@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* background-color: #FFF7F1; */
+}
+
+.About{
+  font-size: 5rem;
+  text-align: center;
+  height: 8rem;
+}
+
+.WhatIsIt{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius:15px;
+}
+
+.about-title{
+  font-size: 2rem;
+  margin-top: 2%;
+}
+
+.AboutUs{
+  /* margin-top: 3em; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 2px solid black; */
+  
+  gap: 5%;
+}
+.WhatIsIt:hover{
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+  background-color: #FFF7F1;
+
+}
+
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 45%; */
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.motto-logo {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* width: 45%; */
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.motto-logo img{
+  /* display: flex; */
+  /* justify-content: center; */
+  width: 100%;
+  /* margin-left: 5%; */
+  /* margin-top: 2%; */
+  /* margin-bottom: 2%; */
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 15%; */
+  margin-right: 5%;
+}
+
+.logo img{
+  width: 90%;
+  min-width: 200px;
+}
+
+@media (max-width: 1000px) {
+  .AboutUs{
+    flex-direction: column-reverse;
+  }
+
+  .about-content{
+    align-self: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 8%;
+  }
+
+  .logo {
+    width: 30%;
+    margin-top: 5%;
+    align-self: center;
+  }
+
+  
+  .logo img {
+    min-width: 100px;
+    max-width: 200px;
+  }
+}
