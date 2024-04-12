@@ -10,7 +10,7 @@
   height: 8rem;
 }
 
-.WhatIsIt{
+.Container{
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 2%;
@@ -20,27 +20,26 @@
   border-radius:15px;
 }
 
-.about-title{
+.Heading{
   font-size: 2rem;
   margin-top: 2%;
 }
 
-.AboutUs{
+.container-content, .container-content1{
   /* margin-top: 3em; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   /* border: 2px solid black; */
-  
   gap: 5%;
 }
-.WhatIsIt:hover{
+.Container:hover{
   box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
   background-color: #FFF7F1;
 
 }
 
-.about-content{
+.NSS-content{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,59 +50,53 @@
 }
 
 .motto-logo {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* width: 45%; */
   margin-left: 5%;
   margin-top: 2%;
   margin-bottom: 2%;
 }
 
-.motto-logo img{
-  /* display: flex; */
-  /* justify-content: center; */
-  width: 100%;
-  /* margin-left: 5%; */
-  /* margin-top: 2%; */
-  /* margin-bottom: 2%; */
-}
-
-.logo{
+.NSS-logo{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 15%; */
   margin-right: 5%;
 }
 
-.logo img{
+.NSS-logo img{
   width: 90%;
   min-width: 200px;
 }
 
 @media (max-width: 1000px) {
-  .AboutUs{
+  .container-content{
     flex-direction: column-reverse;
   }
-
-  .about-content{
+  .container-content1{
+    flex-direction: column;
+  }
+  .NSS-content , .motto-content{
     align-self: center;
     justify-content: center;
     width: 90%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 10%;
+  }
+  .Container{
     margin-top: 8%;
   }
-
-  .logo {
+  .NSS-logo {
     width: 30%;
     margin-top: 5%;
     align-self: center;
   }
-
-  
-  .logo img {
+  .NSS-logo img {
     min-width: 100px;
     max-width: 200px;
+  }
+  .motto-logo{
+    width: 70%;
+    margin-top: 5%;
+    align-self: center;
   }
 }
