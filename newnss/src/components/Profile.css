@@ -1,5 +1,5 @@
 .profile-section{
-    background-color: black;
+    /* background-color: black; */
     padding: 10px;
 }
 
@@ -20,7 +20,7 @@
 .Profile-box:hover .pic{
     border: 5px solid rgb(71, 66, 66);
     transition: box-shadow 0.3s ease;
-    box-shadow: 5px 5px 30px rgba(62, 67, 67, 0.5),-5px -5px 30px rgba(62, 64, 65, 0.966);
+    box-shadow: 5px 5px 30px lightgray,-5px -5px 30px lightgray;
     scale: 0.95;
 }
 
@@ -45,7 +45,7 @@
 .Profile-box:hover{
     transition: scale 0.1s ease;
     scale: 1.09;
-    box-shadow: 5px 5px 30px #93bdc0,-5px -5px 30px #93bdc0;
+    box-shadow: 5px 5px 30px lightgray,-5px -5px 30px lightgray;
 }
 
 .Profile-box:hover p{
@@ -60,18 +60,19 @@
 
 @keyframes glow {
     from {
-      text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 2px #19a5ba, 0 0 7px #19a5ba, 0 0 11px #19a5ba, 0 0 15px #19a5ba, 0 0 18px #19a5ba;
+      text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 2px gray, 0 0 7px gray, 0 0 11px gray, 0 0 15px gray, 0 0 18px gray;
     }
     to {
-      text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 15px #19a5ba, 0 0 20px #19a5ba, 0 0 25px #19a5ba, 0 0 30px #19a5ba, 0 0 30px #19a5ba;
+      text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 15px gray, 0 0 20px gray, 0 0 25px gray, 0 0 30px gray, 0 0 30px gray;
     }
 }
 
 .team-text{
     font-size: 2rem;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 2%;
-    color: rgb(247, 251, 251);
+    color: black;
     height: 20%;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #19a5ba, 0 0 10px #19a5ba, 0 0 15px #19a5ba, 0 0 20px #19a5ba, 0 0 25px #19a5ba;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px gray, 0 0 10px gray, 0 0 15px gray, 0 0 20px gray, 0 0 25px gray;
     animation: glow 2s ease-in-out infinite alternate;
 }
+
