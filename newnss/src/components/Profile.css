@@ -1,0 +1,77 @@
+.profile-section{
+    background-color: black;
+    padding: 10px;
+}
+
+
+.Profile-box{
+ height: 240px;
+ width: 200px;
+ padding: 20px 20px 20px 20px;
+ border-radius: 10%;
+ display: flex;
+ flex-direction: column;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ align-items: center;
+ background-color: white;
+ box-shadow: 5px 5px 10px rgba(218, 215, 215, 0.943);
+}
+
+.Profile-box:hover .pic{
+    border: 5px solid rgb(71, 66, 66);
+    transition: box-shadow 0.3s ease;
+    box-shadow: 5px 5px 30px rgba(62, 67, 67, 0.5),-5px -5px 30px rgba(62, 64, 65, 0.966);
+    scale: 0.95;
+}
+
+.TeamMembers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 15px;
+    padding-bottom: 8px;
+    row-gap: 15px;
+}
+
+.profile-pic{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Profile-box:hover{
+    transition: scale 0.1s ease;
+    scale: 1.09;
+    box-shadow: 5px 5px 30px #93bdc0,-5px -5px 30px #93bdc0;
+}
+
+.Profile-box:hover p{
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
+
+.Profile-box:hover h3{
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 2px #19a5ba, 0 0 7px #19a5ba, 0 0 11px #19a5ba, 0 0 15px #19a5ba, 0 0 18px #19a5ba;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 15px #19a5ba, 0 0 20px #19a5ba, 0 0 25px #19a5ba, 0 0 30px #19a5ba, 0 0 30px #19a5ba;
+    }
+}
+
+.team-text{
+    font-size: 2rem;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 2%;
+    color: rgb(247, 251, 251);
+    height: 20%;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #19a5ba, 0 0 10px #19a5ba, 0 0 15px #19a5ba, 0 0 20px #19a5ba, 0 0 25px #19a5ba;
+    animation: glow 2s ease-in-out infinite alternate;
+}
