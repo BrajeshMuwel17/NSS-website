@@ -71,11 +71,12 @@ const Footer = () => {
 
             <div className="link">
               <h4>IMPORTANT LINKS</h4>
-              <p>IIT Guwahati home
-              <br />
-              Social Media
-              <br />
-              IITG Gymkhana</p>
+              <p><a href='https://iitg.ac.in/' target='_blank'> IIT Guwahati Home</a>
+              <br/>
+              <a href='https://www.iitg.ac.in/stud/gymkhana/' target='_blank'> IIT Guwahati Gymkhana</a>
+              <br/>
+              <a href='https://nss.gov.in/' target='_blank'> NSS Government</a>
+              </p>
             </div>
 
             <div className="social-media">
