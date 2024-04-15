@@ -1,0 +1,66 @@
+.Background {
+    background-image: url('../images/main-gate.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.member-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member-heading h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.member-content {
+    margin-bottom: 20px;
+}
+
+.member-content .member-name,
+.member-content .member-designation,
+.member-content .member-website,
+.member-content .member-pic {
+    margin-bottom: 15px;
+}
+
+.member-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+
+.Submit {
+    text-align: center;
+}
+
+.Submit button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Submit button:hover {
+    background-color: #0056b3;
+}

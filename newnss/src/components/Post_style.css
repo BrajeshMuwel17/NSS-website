@@ -1,0 +1,89 @@
+.Background {
+    background-image: url('../images/main-gate.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.post-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-heading h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.post-content {
+    margin-bottom: 20px;
+}
+
+.post-content .post-title,
+.post-content .post-description,
+.post-content .post-instalink,
+.post-content .post-twitterlink,
+.post-content .post-pic {
+    margin-bottom: 10px;
+    
+}
+
+.post-title,.post-description,.post-instalink,.post-twitterlink{
+    border: 1px solid #000000;
+    width: 50%;
+    /* align-content: center; */
+    /* margin-left: 5px; */
+    /* padding-left: 5px;*/
+}
+
+.post-content .post-hashtag {
+    margin-bottom: 10px;
+}
+
+.post-content .post-hashtag label {
+    display: block;
+}
+
+.post-content .post-hashtag input[type="radio"] {
+    margin-right: 5px;
+}
+
+.post-content .post-date input[type="date"] {
+    width: 50%;
+    padding: px;
+    border: 1px solid #000000;
+    /* border-radius: 4px; */
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.Submit {
+    text-align: center;
+}
+
+.Submit button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Submit button:hover {
+    background-color: #0056b3;
+}

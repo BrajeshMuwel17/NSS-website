@@ -14,7 +14,14 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import banner from "../images/banner.jpg";
 import nsslogo from "../images/logo.png";
-import newgif from "../images/new.gif"
+import newgif from "../images/new.gif";
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import List from '@mui/material/List';
+import Drawer from '@mui/material/Drawer';
+import Slide from '@mui/material/Slide';
 
 
 
@@ -147,7 +154,13 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ display: { sm: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              display: { sm: "flex", md: "none" },
+             
+              "& .MuiDrawer-paper": { width: 250 },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -158,30 +171,41 @@ function ResponsiveAppBar() {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
+            <Drawer
+              anchor="right"
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { sm: "block", md: "none" },
+                backgroundColor: "darkgray",
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+              <Box
+                sx={{
+                  width: 250,
+                
+                  marginTop: 5,
+                  backgroundColor: "#f0f0f0",
+                  padding: "16px 0",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center"
+                }}
+                role="presentation"
+                onClick={handleCloseNavMenu}
+                onKeyDown={handleCloseNavMenu}
+              >
+                <List>
+                  {pages.map((page) => (
+                    <ListItem key={page} disablePadding>
+                      <ListItemButton>
+                        <ListItemText primary={page} />
+                      </ListItemButton>
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
+            </Drawer>
           </Box>
         </Toolbar>
       </Container>
@@ -279,7 +303,7 @@ function NavBar() {
             textAlign: "center",
           }}
         >
-              <img
+          <img
             src={newgif} // Update the path to your image
             alt="Logo"
             style={{
@@ -290,13 +314,11 @@ function NavBar() {
             }}
           />
           We invite all interested Faculty Members, Officers, Staff Members and
-          Students to join NSS Cell as a Volunteer. Join 
+          Students to join NSS Cell as a Volunteer. Join
           <a href="https://www.google.com/"> here</a>.
-          
         </Typography>
-      
       </Box>
-     
+
       <ResponsiveAppBar />
     </Box>
   );
