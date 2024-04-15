@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Activities = () => {
+const Activities = ({posts}) => {
     const [activeTab, setActiveTab] = useState('All');
     const [isDropdown, setIsDropdown] = useState(false);
 
@@ -15,7 +15,7 @@ const Activities = () => {
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
-    };
+    };  
 
     // Define content for each tab
     const tabContents = {
@@ -53,7 +53,7 @@ const Activities = () => {
                 <select
                     value={activeTab}
                     onChange={(e) => handleTabClick(e.target.value)}
-                    className="px-4 py-2 mb-6 rounded-full transition-colors duration-300 bg-gray-200"
+                    className="px-4 py-2 mb-6 rounded-full transition-colors duration-300 bg-gray"
                 >
                     {tabs.map((tab) => (
                         <option key={tab} value={tab}>{tab}</option>

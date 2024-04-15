@@ -1,0 +1,100 @@
+
+omment.ActivityCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.activity-card{
+  border: 1px solid #00000033;
+  border-radius: 8px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2%;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.show-more{
+  color: rgb(50, 113, 229);
+}
+
+.titleLine{
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-image {
+  /* width: 150px; */
+  /* height: 150px; */
+  width: 35%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.activity-title {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.activity-description {
+  margin-bottom: 10px;
+  font-size: 14px;
+  height: 8em;
+  color: #555;
+}
+
+.activity-info {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 2rem;
+  align-items: center;
+  font-size: 12px;
+  color: #888;
+}
+
+.hashtags {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #27932B;  
+  background-color: #27932B1F;
+  padding:0.25rem 0.5rem; 
+  border-radius: 4px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  color: #888;
+  margin-left: 10px;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
+.date{
+  padding:0.25rem 0.5rem; 
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #4856D81F;
+  color:#4856D8;
+  border-radius: 4px;
+}

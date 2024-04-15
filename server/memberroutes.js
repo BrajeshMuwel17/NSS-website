@@ -13,7 +13,7 @@ cloudinary.config({
 });
 
 
-router.get('/members', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const members = await Member.find();
         res.json(members);
@@ -23,7 +23,8 @@ router.get('/members', async (req, res) => {
 });
 
 
-router.post('/members',upload.single("avatar"), async (req, res) => {
+router.post('/',upload.single("avatar"), async (req, res) => {
+    console.log(req.body    );
     const member = new Member({
         name: req.body.name,
         designation : req.body.designation,

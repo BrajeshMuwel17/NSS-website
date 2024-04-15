@@ -34,30 +34,14 @@ const TeamMembers = ({ members }) => {
   );
 };
 
-const members = [
-  {
-    id: 1,
-    image: debangaImage,
-    name: 'Dr. Debanga Raj Neog',
-    position: 'Programme Coordinator',
-  },
-  {
-    id: 2,
-    image: janeImage,
-    name: 'Dr. Amarjyoti',
-    position: 'Programme Manager',
-  },
-  // add more members here...
-];
-
-const Profile = () => {
-//   return <TeamMembers members={members}/>;
-    return <div className="profile-section">
-            <div className="team-text">
-            <h1 className="our-team">Our Team</h1>
-            </div>
-            <TeamMembers members={members}/>
-           </div>;
+const Profile = ({ members }) => {
+  //   return <TeamMembers members={members}/>;
+  return <div className="profile-section">
+    <div className="team-text">
+      <h1 className="our-team">Our Team</h1>
+    </div>
+    <TeamMembers members={members} />
+  </div>;
 };
 
 export default Profile;
