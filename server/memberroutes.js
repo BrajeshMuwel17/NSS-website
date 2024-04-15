@@ -31,13 +31,13 @@ router.post('/',upload.single("avatar"), async (req, res) => {
         hyperlink : req.body.hyperlink
     });
     try {
-        await member.save();
         if (req.file) {
             cloudinary.uploader.upload(req.file.path,{resource_type: 'auto'}).then(async (result) => {
-            member.imagelink = result.secure_url;
-            await post.save();
-          });
+                member.imagelink = result.secure_url;
+                await member.save();
+            });
         }
+        await member.save();
         res.status(201).json(member);
     } catch (err) {
         res.status(400).json({ message: err.message });

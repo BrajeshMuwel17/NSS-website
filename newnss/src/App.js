@@ -7,6 +7,9 @@ import Footer from './components/Footer';
 import Activities from './components/activities';
 import Profile from './components/Profile';
 import Xyz from './components/ActivityCard';
+import Login from './components/LoginPage';
+import Post from './components/Post';
+import Member from './components/Member';
 
 function App() {
 
@@ -31,6 +34,9 @@ function App() {
     <Xyz></Xyz>
     <Profile members={members}>  </Profile>
     <Footer></Footer>
+    <Login></Login>
+    <Post></Post>
+    <Member></Member>
     </div>
    
     {/* <div style={{height:'1000px'}} ></div> */}

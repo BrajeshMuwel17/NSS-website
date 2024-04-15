@@ -3,13 +3,16 @@ import debangaImage from '../images/banner.jpg';
 import janeImage from '../images/banner.jpg';
 import './Profile.css';
 
-const TeamMember = ({ image, name, position }) => {
+const TeamMember = (member) => {
+  // console.log(member);
+  const { name, designation, imagelink } = member;
+  console.log(imagelink);
   return (
     <div className="Profile-box">
       <div className="profile-pic">
         <img className="pic"
-          src={image}
-          alt={name}
+          src={imagelink}
+          alt="image"
           style={{
             borderRadius: '50%',
             width: '90%',
@@ -19,7 +22,7 @@ const TeamMember = ({ image, name, position }) => {
         />
       </div>
       <h3>{name}</h3>
-      <p>{position}</p>
+      <p>{designation}</p>
     </div>
   );
 };
@@ -35,6 +38,7 @@ const TeamMembers = ({ members }) => {
 };
 
 const Profile = ({ members }) => {
+  console.log(members);
   //   return <TeamMembers members={members}/>;
   return <div className="profile-section">
     <div className="team-text">
