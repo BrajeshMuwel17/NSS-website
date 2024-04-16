@@ -96,6 +96,7 @@ function ResponsiveAppBar() {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
+              ml: 3,
               display: { xs: "none", sm: "flex", md: "flex" },
               flexDirection: "column",
               alignItems: "center",
@@ -107,8 +108,9 @@ function ResponsiveAppBar() {
               fontSize: "1.5rem",
             }}
           >
-            NSS, IIT GUWAHATI
+             NSS,IIT GUWAHATI
           </Typography>
+          
 
           <Typography
             variant="h5"
