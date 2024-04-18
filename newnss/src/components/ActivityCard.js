@@ -24,6 +24,7 @@ import {
   Favorite as FavoriteIcon,
   Share as ShareIcon,
   ExpandMore as ExpandMoreIcon,
+  ForkLeft,
 } from "@mui/icons-material";
 import { useState } from "react";
 
@@ -107,7 +108,8 @@ function RecipeReviewCard({ title, date, content, imagelink ,hashtag,instalink,t
           </div>
          
           <CardContent>
-  <Typography variant="body2" color="text.secondary">
+  <Typography variant="body2"color="text.secondary" >
+    
     {expanded ? content : displayContent}
     {content.length > 200 && (
       <button className="show-more" onClick={toggleExpanded}>

@@ -112,9 +112,9 @@ function ResponsiveAppBar() {
               fontSize: "1.5rem",
             }}
           >
-             NSS,IIT GUWAHATI
+            NSS,IIT GUWAHATI
           </Typography>
-          
+
 
           <Typography
             variant="h5"
@@ -163,7 +163,7 @@ function ResponsiveAppBar() {
           <Box
             sx={{
               display: { sm: "flex", md: "none" },
-             
+
               "& .MuiDrawer-paper": { width: 250 },
             }}
           >
@@ -189,7 +189,7 @@ function ResponsiveAppBar() {
               <Box
                 sx={{
                   width: 250,
-                
+
                   marginTop: 5,
                   backgroundColor: "#f0f0f0",
                   padding: "16px 0",
@@ -219,120 +219,120 @@ function ResponsiveAppBar() {
   );
 }
 
-function NavBar({posts,members}) {
+function NavBar({ posts, members }) {
   const theme = useTheme();
   return (
     <>
-    <Box sx={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}>
-      <Box
-        sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          background: `url(${banner}) center/cover`,
-          zIndex: -1,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Typography
-          variant="h1"
-          color="white"
+      <Box sx={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}>
+        <Box
           sx={{
-            fontSize: "4rem",
-            width: "65%",
-            fontWeight: "bold",
-            marginTop: "120px",
-            "@media (max-width:1000px)": {
-              fontSize: "3rem",
-              width: "85%",
-            },
-            "@media (max-width:600px)": {
-              fontSize: "2.5rem",
-              textAlign: "center",
-              width: "90%",
-            },
-            textAlign: "center",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: `url(${banner}) center/cover`,
+            zIndex: -1,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
           }}
         >
-          BRINGING THE CHANGE TOGETHER.
-        </Typography>
-
-        <Typography
-          variant="h1"
-          color="rgba(255, 255, 255, 0.7)" // Translucent white color
-          sx={{
-            fontSize: "1rem",
-            width: "60%",
-            marginTop: "30px",
-            // fontWeight: "bold",
-            "@media (max-width:1000px)": {
-              fontSize: "1rem",
-              width: "70%",
-            },
-            "@media (max-width:600px)": {
-              fontSize: "1rem",
+          <Typography
+            variant="h1"
+            color="white"
+            sx={{
+              fontSize: "4rem",
+              width: "65%",
+              fontWeight: "bold",
+              marginTop: "120px",
+              "@media (max-width:1000px)": {
+                fontSize: "3rem",
+                width: "85%",
+              },
+              "@media (max-width:600px)": {
+                fontSize: "2.5rem",
+                textAlign: "center",
+                width: "90%",
+              },
               textAlign: "center",
-              width: "90%",
-            },
-            textAlign: "center",
-          }}
-        >
-          The Indian Institutes of Technology (IITs) were created to engineer
-          technological innovations that would improve the living standards of
-          the society at large. NSS IIT Guwahati constantly works towards this
-          goal through regular donation drives, cleanliness drives and by taking
-          up teaching projects at various locations.
-        </Typography>
-
-        <Typography
-          variant="h1"
-          color="white"
-          sx={{
-            fontSize: "1.5rem",
-            width: "60%",
-            marginTop: "120px",
-            fontWeight: "bold",
-            "@media (max-width:1000px)": {
-              fontSize: "1.5rem",
-              width: "70%",
-            },
-            "@media (max-width:600px)": {
-              fontSize: "1.2rem",
-              marginTop: "60px",
-              textAlign: "center",
-              width: "90%",
-            },
-            textAlign: "center",
-          }}
-        >
-          <img
-            src={newgif} // Update the path to your image
-            alt="Logo"
-            style={{
-              height: "60px",
-              display: { xs: "none", md: "flex" },
-              marginRight: 8,
-              display: "inline-flex",
             }}
-          />
-          We invite all interested Faculty Members, Officers, Staff Members and
-          Students to join NSS Cell as a Volunteer. Join
-          <a href="https://www.google.com/"> here</a>.
-        </Typography>
-      </Box>
+          >
+            BRINGING THE CHANGE TOGETHER.
+          </Typography>
 
-      <ResponsiveAppBar />
-    </Box>
-<Activities posts={posts}/>
-<About></About>
-<Profile members={members}/>
-<Footer/>
-</>
+          <Typography
+            variant="h1"
+            color="rgba(255, 255, 255, 0.7)" // Translucent white color
+            sx={{
+              fontSize: "1rem",
+              width: "60%",
+              marginTop: "30px",
+              // fontWeight: "bold",
+              "@media (max-width:1000px)": {
+                fontSize: "1rem",
+                width: "70%",
+              },
+              "@media (max-width:600px)": {
+                fontSize: "1rem",
+                textAlign: "center",
+                width: "90%",
+              },
+              textAlign: "center",
+            }}
+          >
+            The Indian Institutes of Technology (IITs) were created to engineer
+            technological innovations that would improve the living standards of
+            the society at large. NSS IIT Guwahati constantly works towards this
+            goal through regular donation drives, cleanliness drives and by taking
+            up teaching projects at various locations.
+          </Typography>
+
+          <Typography
+            variant="h1"
+            color="white"
+            sx={{
+              fontSize: "1.5rem",
+              width: "60%",
+              marginTop: "120px",
+              fontWeight: "bold",
+              "@media (max-width:1000px)": {
+                fontSize: "1.5rem",
+                width: "70%",
+              },
+              "@media (max-width:600px)": {
+                fontSize: "1.2rem",
+                marginTop: "60px",
+                textAlign: "center",
+                width: "90%",
+              },
+              textAlign: "center",
+            }}
+          >
+            <img
+              src={newgif} // Update the path to your image
+              alt="Logo"
+              style={{
+                height: "60px",
+                display: { xs: "none", md: "flex" },
+                marginRight: 8,
+                display: "inline-flex",
+              }}
+            />
+            We invite all interested Faculty Members, Officers, Staff Members and
+            Students to join NSS Cell as a Volunteer. Join
+            <a href="https://www.google.com/"> here</a>.
+          </Typography>
+        </Box>
+
+        <ResponsiveAppBar />
+      </Box>
+      <Activities posts={posts} />
+      <About></About>
+      <Profile members={members} />
+      <Footer />
+    </>
   );
 }
 

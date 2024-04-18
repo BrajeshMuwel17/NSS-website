@@ -24,11 +24,11 @@ router.get('/', async (req, res) => {
 
 
 router.post('/',upload.single("avatar"), async (req, res) => {
-    console.log(req.body    );
+    console.log(req.body);
     const member = new Member({
         name: req.body.name,
         designation : req.body.designation,
-        hyperlink : req.body.hyperlink
+        hyperlink : req.body.website
     });
     try {
         if (req.file) {
