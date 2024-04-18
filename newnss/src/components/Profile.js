@@ -23,7 +23,7 @@ const TeamMember = (member) => {
     //   <h3>{name}</h3>
     //   <p>{designation}</p>
     // </div>
-        <div className="vh-100 d-flex align-items-center justify-content-center" style={{ backgroundColor: '#eee' }}>
+        <div className="vh-100 d-flex align-items-center justify-content-center ml-5 mr-5" style={{ backgroundColor: '#ffffff' }}>
       <MDBCard className="card">
         <MDBCardBody className="text-center">
           <div className="profile-image">
