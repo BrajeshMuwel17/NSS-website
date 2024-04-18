@@ -1,78 +1,85 @@
-.profile-section{
-    /* background-color: black; */
-    padding: 10px;
+/* Profile.css */
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 250px; /* Set a minimum width */
+    max-width: 250px;
+    max-height: 320px;
+    min-height: 320px;
+    /* Set maximum height for the card */
+    /* overflow-y: auto; Add scrollbar if content overflows */
 }
 
-
-.Profile-box{
- height: 240px;
- width: 200px;
- padding: 20px 20px 20px 20px;
- border-radius: 10%;
- display: flex;
- flex-direction: column;
- font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- align-items: center;
- background-color: white;
- box-shadow: 5px 5px 10px rgba(218, 215, 215, 0.943);
+.card-body {
+    padding: 0; /* Remove default padding */
 }
 
-.Profile-box:hover .pic{
-    border: 5px solid rgb(71, 66, 66);
-    transition: box-shadow 0.3s ease;
-    box-shadow: 5px 5px 30px lightgray,-5px -5px 30px lightgray;
-    scale: 0.95;
+.profile-image {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
-
-.TeamMembers{
+.card-image a{
+    width: 150px; /* Set fixed width for the image container */
+    height: 150px; /* Set fixed height for the image container */
+    border-radius: 50%;;
+    background-color: black;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    column-gap: 15px;
-    padding-bottom: 8px;
-    row-gap: 15px;
+    overflow: hidden; /* Hide overflowing image content */
 }
 
-.profile-pic{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+.card-image img {
+    width: 100%; 
+     height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
 }
 
-.Profile-box:hover{
-    transition: scale 0.1s ease;
-    scale: 1.09;
-    box-shadow: 5px 5px 30px lightgray,-5px -5px 30px lightgray;
+
+.card-title {
+    font-weight: bold;
+    margin-top: 10px; /* Adjust gap between image and name */
+    overflow-wrap: break-word; /* Allow name to wrap to new line */
 }
 
-.Profile-box:hover p{
-    transition: color 0.3s ease;
-    font-weight: 400;
+.designation {
+    overflow-wrap: break-word; /* Allow designation to wrap to new line */
 }
 
-.Profile-box:hover h3{
-    font-weight: 400;
-    transition: color 0.3s ease;
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
 }
 
-@keyframes glow {
-    from {
-      text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 2px gray, 0 0 7px gray, 0 0 11px gray, 0 0 15px gray, 0 0 18px gray;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 15px gray, 0 0 20px gray, 0 0 25px gray, 0 0 30px gray, 0 0 30px gray;
-    }
+.btn-floating {
+    margin-right: 10px; /* Adjust the space between social buttons */
 }
 
-.team-text{
-    font-size: 2rem;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 2%;
-    color: black;
-    height: 20%;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px gray, 0 0 10px gray, 0 0 15px gray, 0 0 20px gray, 0 0 25px gray;
-    animation: glow 2s ease-in-out infinite alternate;
+.btn-facebook {
+    background-color: #3b5998;
+    color: #fff;
 }
 
+.btn-twitter {
+    background-color: #55acee;
+    color: #fff;
+}
+
+.btn-skype {
+    background-color: #00aff0;
+    color: #fff;
+}
+
+
+.TeamMembers {
+    display: flex; /* Use flexbox to display items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next row if there's not enough space */
+    justify-content: center; /* Center items horizontally */
+  }
+  .card {
+    /* Your existing card styles */
+    /* Add margin to create space between cards */
+    margin: 10px;
+  }
