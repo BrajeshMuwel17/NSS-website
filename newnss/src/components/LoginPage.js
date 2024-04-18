@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import './Login.css'; // External CSS file for styling
 
@@ -11,25 +11,45 @@ function Login() {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-  function handleSubmit(e) {
-    e.preventDefault();
-    // console.log(email, password);
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    // e.preventDefault();
+    console.log(email, password);
+    localStorage.setItem('email', email);
+    localStorage.setItem('password', password);
     setRedirect(true);
+  };
+
+  if (redirect && email === 'aryan.arya@iitg.ac.in' && password === 'nss') {
+    return <Navigate to={'/welcome'} />;
   }
-  if(redirect){
-    return <Navigate to={'/welcome'}/>
-  }
+
   return (
     <div className="loginBackground">
       <div className="container">
         <div className="login-form">
           <h2>Login</h2>
           <form onSubmit={handleSubmit}>
-            <input type="email" placeholder="Email" />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={handleEmailChange}
+            />
             <div className="password-input">
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="Password"
+                value={password}
+                onChange={handlePasswordChange}
               />
               <label className='showPassword'>
                 <div className="spContainer">

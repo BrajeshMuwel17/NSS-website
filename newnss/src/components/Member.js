@@ -1,13 +1,17 @@
 import axios from 'axios';
 import './Member_style.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate instead of navigate
 
 const Member = () => {
-
+    const [email,setEmail] = useState(localStorage.getItem('email'));
+    const [password,setPassword] = useState(localStorage.getItem('password'));
     const [name, setName] = useState('');
     const [designation, setDesignation] = useState('');
     const [website, setWebsite] = useState('');
     const [image, setImage] = useState([]);
+    
+    const navigate = useNavigate(); // Use useNavigate hook to get the navigation function
 
     const handleSubmit = () => {
         console.log(name, designation, website, image[0])
@@ -28,6 +32,7 @@ const Member = () => {
         axios.post('http://localhost:3000/members', formData, config)
             .then(response => {
                 console.log(response.data);
+                navigate('/'); // Use navigate function to navigate to '/'
             })
             .catch(error => {
                 console.error(error);
@@ -38,34 +43,41 @@ const Member = () => {
         setImage(event.target.files);
     }
 
-    return (
-        <div className='Background'>
-            <div className="member-container">
-                <div className="member-heading">
-                    <h1>Add a Member</h1>
-                </div>
-                <div className="member-content">
-                    <div className="member-name">
-                        <input type="text" placeholder=" Name" value={name} onChange={(e) =>setName(e.target.value)} />
+
+    console.log(email,password);
+    console.log('hi');
+    if (email === "aryan.arya@iitg.ac.in"&& password === 'nss') {
+        return (
+            <div className='Background'>
+                <div className="member-container">
+                    <div className="member-heading">
+                        <h1>Add a Member</h1>
                     </div>
-                    
-                    <div className="member-designation">
-                        <input type="text" placeholder="Designation"  value={designation} onChange={(e) =>setDesignation(e.target.value)}  />
+                    <div className="member-content">
+                        <div className="member-name">
+                            <input type="text" placeholder=" Name" value={name} onChange={(e) => setName(e.target.value)} />
+                        </div>
+
+                        <div className="member-designation">
+                            <input type="text" placeholder="Designation" value={designation} onChange={(e) => setDesignation(e.target.value)} />
+                        </div>
+                        <div className="member-website">
+                            <input type="text" placeholder="Website Link" value={website} onChange={(e) => setWebsite(e.target.value)} />
+                        </div>
+                        <div className="member-pic">
+                            <h3>Profile Picture</h3>
+                            <input type="file" accept="image/*" onChange={handleFileChange} />
+                        </div>
                     </div>
-                    <div className="member-website">
-                        <input type="text" placeholder="Website Link"  value={website} onChange={(e) =>setWebsite(e.target.value)}  />
+                    <div className='Submit'>
+                        <button onClick={handleSubmit} >Add</button>
                     </div>
-                    <div className="member-pic">
-                        <h3>Profile Picture</h3>
-                        <input type="file" accept="image/*" onChange={handleFileChange} />
-                    </div>
-                </div>
-                <div className='Submit'>
-                    <button onClick={handleSubmit}>Add</button>
                 </div>
             </div>
-        </div>
-    );
+        );
+    } else {
+        return null; // Render nothing if email is not 'a@gmail.com'
+    }
 }
 
 export default Member;

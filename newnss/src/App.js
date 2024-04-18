@@ -26,7 +26,6 @@ function App() {
       setPosts(response.data);
     });
   }, []);
-
   return (
     <>
     <BrowserRouter>
