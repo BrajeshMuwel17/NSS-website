@@ -47,7 +47,7 @@ const Activities = ({posts}) => {
     }, []);
 
     return (
-        <div className="bg-white py-8 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+        <div className="activities bg-white py-8 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
             <h2 className="text-2xl font-bold mb-4">Activities</h2>
             <p className="text-gray-600 mb-6">
                 Below are a few activities performed by NSS cell of IIT Guwahati over the

@@ -8,9 +8,9 @@ import Profile from './Profile';
 const Footer = () => {
   return (
     <div className="footere-content">
-      <div className="footer">
+      <div className="contact">
           
-            <div className="contact">
+            <div className="footer">
               <h4>OUR ADDRESS</h4>
               <p>
               IIT Guwahati

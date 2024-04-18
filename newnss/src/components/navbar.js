@@ -24,12 +24,14 @@ import Drawer from '@mui/material/Drawer';
 import Slide from '@mui/material/Slide';
 
 
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 import { ThemeProvider, createTheme, useTheme } from "@mui/material/styles";
 import Activities from "./activities";
 import Footer from "./Footer";
 import Profile from "./Profile";
 import About from "./About.js";
+import Objective from "./Objective.js";
 
 const pages = ["Objectives", "Activities", "Our Team", "About", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -155,7 +157,10 @@ function ResponsiveAppBar() {
                   marginRight: index !== pages.length - 1 ? "8px" : 0, // Reduce the margin between buttons
                 }}
               >
-                {page}
+                {/* {page} */}
+                <ScrollLink to={page.toLowerCase().replace(' ', '-')} spy={true} smooth={true} duration={500} offset={-50}>
+                  {page}
+                </ScrollLink>
               </Button>
             ))}
           </Box>
@@ -328,6 +333,7 @@ function NavBar({ posts, members }) {
 
         <ResponsiveAppBar />
       </Box>
+      <Objective></Objective>
       <Activities posts={posts} />
       <About></About>
       <Profile members={members} />

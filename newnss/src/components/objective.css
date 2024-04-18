@@ -1,0 +1,41 @@
+.objectives {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  
+  .objectives > div {
+    text-align: center;
+  }
+  
+  .motive1, .motive2, .motive3 {
+    margin-top: 1rem;
+    min-height: 10rem;
+  }
+  
+  .svg1 svg,
+  .svg2 svg,
+  .svg3 svg {
+    width: 80px; 
+    height: 80px; 
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .objectives {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  
+    .svg1 svg,
+    .svg2 svg,
+    .svg3 svg {
+      width: 60px; 
+      height: 60px; 
+    }
+  }
+  

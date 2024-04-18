@@ -74,7 +74,7 @@
   min-width: 200px;
 }
 
-.footer{
+.contact{
   background-color: #181818;
   /* height: 25rem; */
   margin-top: 5rem;
@@ -84,13 +84,13 @@
   padding: 2rem;
 }
 
-.footer h4{
+.contact h4{
   font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-weight: 600;
 }
-.footer p,a{
+.contact p,a{
   font-size: 1rem;
   margin-bottom: 1rem;
   color: rgba(230, 218, 218, 0.555);;
@@ -152,10 +152,10 @@
 
 @media (max-width: 750px) {
     
-   .footer{
+   .contact{
     flex-direction: column;
    }
-   .footer div{
+   .contact div{
     margin-left: 0;
     margin-bottom: 1.5rem;
    }
