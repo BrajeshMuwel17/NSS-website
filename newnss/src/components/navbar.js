@@ -26,6 +26,9 @@ import Slide from '@mui/material/Slide';
 
 
 import { ThemeProvider, createTheme, useTheme } from "@mui/material/styles";
+import Activities from "./activities";
+import Footer from "./Footer";
+import Profile from "./Profile";
 
 const pages = ["Objectives", "Activities", "Our Team", "About", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -215,9 +218,10 @@ function ResponsiveAppBar() {
   );
 }
 
-function NavBar() {
+function NavBar({posts,members}) {
   const theme = useTheme();
   return (
+    <>
     <Box sx={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}>
       <Box
         sx={{
@@ -323,6 +327,10 @@ function NavBar() {
 
       <ResponsiveAppBar />
     </Box>
+<Activities posts={posts}/>
+<Profile members={members}/>
+<Footer/>
+</>
   );
 }
 
