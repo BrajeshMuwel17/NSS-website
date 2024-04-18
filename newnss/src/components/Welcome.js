@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
+import './welcome.css';
 
 function Welcome() {
     const [redirectToAdd, setRedirectToAdd] = useState(false);
@@ -21,16 +22,19 @@ function Welcome() {
         return <Navigate to={'/post'}/>
     }
     return (
-        <div>
-            <h1>Welcome to our website!</h1>
-            <p>Thank you for visiting. We hope you enjoy your stay.</p>
-            <div className='flex  gap-3'>
-                <button onClick={addMember} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-                    add members
-                </button>
-                <button onClick={createPost} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-                    create a post
-                </button>
+        <div className="welcome-background">
+            <div className="background-image"></div>
+            <div className='welcome-content'>
+                <h1>Welcome to our website!</h1>
+                <p>Thank you for visiting. We hope you enjoy your stay.</p>
+                <div className='Buttons'>
+                    <button onClick={addMember} >
+                        add members
+                    </button>
+                    <button onClick={createPost} >
+                        create a post
+                    </button>
+                </div>
             </div>
         </div>
     );
