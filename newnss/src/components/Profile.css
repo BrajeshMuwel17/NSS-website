@@ -83,3 +83,9 @@
     /* Add margin to create space between cards */
     margin: 10px;
   }
+
+
+.our-team {
+    text-align: center;
+    font-size: 40px; 
+}
