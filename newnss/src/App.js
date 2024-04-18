@@ -10,7 +10,8 @@ import Xyz from './components/ActivityCard';
 import Login from './components/LoginPage';
 import Post from './components/Post';
 import Member from './components/Member';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Welcome from './components/Welcome';
 function App() {
 
   const [members, setMembers] = useState([]);
@@ -28,16 +29,25 @@ function App() {
 
   return (
     <>
-     <div >
-    <NavBar></NavBar>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<NavBar posts={posts} members={members} />} />
+          {/* <Route path="" element={<Activities posts={posts} />} /> */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/post" element={<Post />} />
+          <Route path="/member" element={<Member />} />
+          <Route path="/welcome" element={<Welcome />} />
+      </Routes>
+    </BrowserRouter>
+    {/* <NavBar></NavBar>
     <Activities posts={posts}>  </Activities>
     <Xyz></Xyz>
     <Profile members={members}>  </Profile>
-    <Footer></Footer>
-    <Login></Login>
+    <Footer></Footer> */}
+    {/* <Login></Login>
     <Post></Post>
-    <Member></Member>
-    </div>
+    <Member></Member> */}
+    
    
     {/* <div style={{height:'1000px'}} ></div> */}
     </>

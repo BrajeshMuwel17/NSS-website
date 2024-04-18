@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import ActivityCards from './ActivityCard';
 
 const Activities = ({posts}) => {
     const [activeTab, setActiveTab] = useState('All');
     const [isDropdown, setIsDropdown] = useState(false);
-
+    console.log(posts); 
     const tabs = [
         'All',
         'Cleanliness',
@@ -15,16 +16,19 @@ const Activities = ({posts}) => {
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
+        // console.log(tabContents[activeTab]);
     };  
 
+    // console.log(posts.filter((post) => post.hashtag === "Cleanliness") );
+    
     // Define content for each tab
     const tabContents = {
-        'All': 'All activities content',
-        'Cleanliness': 'Cleanliness activities content',
-        'Donations': 'Donations activities content',
-        'Teaching': 'Teaching activities content',
-        'Welfare': 'Welfare activities content',
-        'Awareness': 'Awareness activities content',
+        'All': posts,
+        'Cleanliness': posts.filter((post) => post.hashtag === "Cleanliness"),
+        'Donations': posts.filter((post) => post.hashtag === "Donations"),
+        'Teaching': posts.filter((post) => post.hashtag === "Teaching"),
+        'Welfare': posts.filter((post) => post.hashtag === "Welfare"),
+        'Awareness': posts.filter((post) => post.hashtag === "Awareness"),
     };
 
     const handleResize = () => {
@@ -77,7 +81,7 @@ const Activities = ({posts}) => {
             )}
             {/* Show content based on active tab */}
             <div className="text-center">
-                {tabContents[activeTab]}
+                <ActivityCards posts={tabContents[activeTab]} />
             </div>
         </div>
     );

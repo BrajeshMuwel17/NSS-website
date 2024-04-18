@@ -1,6 +1,4 @@
 import React from 'react';
-import debangaImage from '../images/banner.jpg';
-import janeImage from '../images/banner.jpg';
 import './Profile.css';
 import { MDBCard, MDBCardBody, MDBCardImage, MDBTypography } from 'mdb-react-ui-kit';
 
