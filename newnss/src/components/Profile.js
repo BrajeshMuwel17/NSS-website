@@ -1,6 +1,4 @@
 import React from 'react';
-import debangaImage from '../images/banner.jpg';
-import janeImage from '../images/banner.jpg';
 import './Profile.css';
 
 const TeamMember = (member) => {
