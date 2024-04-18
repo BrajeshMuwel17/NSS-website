@@ -29,6 +29,7 @@ import { ThemeProvider, createTheme, useTheme } from "@mui/material/styles";
 import Activities from "./activities";
 import Footer from "./Footer";
 import Profile from "./Profile";
+import About from "./About.js";
 
 const pages = ["Objectives", "Activities", "Our Team", "About", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -328,6 +329,7 @@ function NavBar({posts,members}) {
       <ResponsiveAppBar />
     </Box>
 <Activities posts={posts}/>
+<About></About>
 <Profile members={members}/>
 <Footer/>
 </>
