@@ -1,51 +1,47 @@
-/* Profile.css */
-
 .card {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    min-width: 250px; /* Set a minimum width */
+    min-width: 250px;
     max-width: 250px;
     max-height: 320px;
     min-height: 320px;
-    /* Set maximum height for the card */
-    /* overflow-y: auto; Add scrollbar if content overflows */
 }
 
 .card-body {
-    padding: 0; /* Remove default padding */
+    padding: 0;
 }
 
 .profile-image {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.card-image a{
-    width: 150px; /* Set fixed width for the image container */
-    height: 150px; /* Set fixed height for the image container */
-    border-radius: 50%;;
+
+.card-image a {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     background-color: black;
     display: flex;
-    overflow: hidden; /* Hide overflowing image content */
+    overflow: hidden;
 }
 
 .card-image img {
     width: 100%; 
-     height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
+    height: 100%;
+    object-fit: cover;
 }
-
 
 .card-title {
     font-weight: bold;
-    margin-top: 10px; /* Adjust gap between image and name */
-    overflow-wrap: break-word; /* Allow name to wrap to new line */
+    margin-top: 10px;
+    overflow-wrap: break-word;
 }
 
 .designation {
-    overflow-wrap: break-word; /* Allow designation to wrap to new line */
+    overflow-wrap: break-word;
 }
 
 .card-text {
@@ -54,7 +50,7 @@
 }
 
 .btn-floating {
-    margin-right: 10px; /* Adjust the space between social buttons */
+    margin-right: 10px;
 }
 
 .btn-facebook {
@@ -72,18 +68,15 @@
     color: #fff;
 }
 
-
 .TeamMembers {
-    display: flex; /* Use flexbox to display items in a row */
-    flex-wrap: wrap; /* Allow items to wrap to the next row if there's not enough space */
-    justify-content: center; /* Center items horizontally */
-  }
-  .card {
-    /* Your existing card styles */
-    /* Add margin to create space between cards */
-    margin: 10px;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.card {
+    margin: 10px;
+}
 
 .our-team {
     text-align: center;
