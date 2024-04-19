@@ -98,3 +98,16 @@ omment.ActivityCards {
   color:#4856D8;
   border-radius: 4px;
 }
+
+.hashtag_1{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 550px) {
+  .hashtag_1 {
+      flex-direction: column;
+      gap: 5px;
+  }
+  
+}
