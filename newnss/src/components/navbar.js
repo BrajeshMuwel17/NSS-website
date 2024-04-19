@@ -33,6 +33,7 @@ import Footer from "./Footer";
 import Profile from "./Profile";
 import About from "./About.js";
 import Objective from "./Objective.js";
+import VolunteerList from "./Volunteers.js";
 
 const pages = ["Objectives", "Activities", "Our Team", "About", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -345,6 +346,7 @@ function NavBar({ posts, members }) {
       <Activities posts={posts} />
       <About></About>
       <Profile members={members} />
+      <VolunteerList />
       <Footer />
     </>
   );
