@@ -78,6 +78,18 @@ omment.ActivityCards {
   border-radius: 4px;
 }
 
+.tarikh{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #4856D8;  
+  background-color:#4856D81F;
+  
+  padding:0.25rem 0.5rem; 
+  border-radius: 4px;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;

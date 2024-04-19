@@ -65,6 +65,8 @@ function RecipeReviewCard({
     }
   };
 
+  const slicedDate = date ? date.slice(0, 10) : '';
+
   return (
     <div
       style={{
@@ -93,12 +95,12 @@ function RecipeReviewCard({
           component="img"
           height="154"
           image={imagelink}
-          alt="Paella dish"
-          sx={{ width: { xs: "100%", md: 345 } }} // Full width on small screens, fixed width on medium screens
+          alt="Image"
+          sx={{ width: { xs: "100%", md: "345px" }}} // Full width on small screens, fixed width on medium screens
         />
         <Box sx={{ display: "flex", flexDirection: "column", flex: 1 }}>
           <div style={{ display: "flex" }}>
-            <CardHeader title={title} date={date} />
+            <CardHeader title={title} date={slicedDate} />
             <div
               className="social-links"
               style={{
@@ -141,7 +143,7 @@ function RecipeReviewCard({
             </IconButton>
 
             <div className="hashtag_1 " style={{ display: "flex" }}>
-              <div className="hashtags" style={{marginRight:'10px'}}>
+              <div className="hashtags" style={{ marginRight: '10px' }}>
                 <svg
                   width="12"
                   height="10"
@@ -156,20 +158,34 @@ function RecipeReviewCard({
                 </svg>
                 {hashtag}
               </div>
-              <div className="hashtags" style={{ marginRight: "10px" }}>
+              <div className="tarikh" style={{ marginRight: "10px" }}>
                 <svg
-                  width="12"
-                  height="10"
-                  viewBox="0 0 12 10"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    d="M12 5.00004L9.1 9.10004C8.97778 9.27782 8.81944 9.41671 8.625 9.51671C8.43056 9.61671 8.22222 9.66671 8 9.66671H1.33333C0.966667 9.66671 0.652778 9.53615 0.391667 9.27504C0.130556 9.01393 0 8.70004 0 8.33337V1.66671C0 1.30004 0.130556 0.986152 0.391667 0.725041C0.652778 0.46393 0.966667 0.333374 1.33333 0.333374H8C8.22222 0.333374 8.43056 0.383374 8.625 0.483374C8.81944 0.583374 8.97778 0.722263 9.1 0.900041L12 5.00004ZM10.3667 5.00004L8 1.66671H1.33333V8.33337H8L10.3667 5.00004Z"
-                    fill="#27932B"
-                  />
+                  <mask
+                    id="mask0_105_47"
+                    style={{ maskType: 'alpha' }}
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="16"
+                    height="16"
+                  >
+                    <rect width="16" height="16" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_105_47)">
+                    <path
+                      d="M3.33333 14.6663C2.96667 14.6663 2.65278 14.5358 2.39167 14.2747C2.13056 14.0136 2 13.6997 2 13.333V3.99967C2 3.63301 2.13056 3.31912 2.39167 3.05801C2.65278 2.7969 2.96667 2.66634 3.33333 2.66634H4V1.33301H5.33333V2.66634H10.6667V1.33301H12V2.66634H12.6667C13.0333 2.66634 13.3472 2.7969 13.6083 3.05801C13.8694 3.31912 14 3.63301 14 3.99967V13.333C14 13.6997 13.8694 14.0136 13.6083 14.2747C13.3472 14.5358 13.0333 14.6663 12.6667 14.6663H3.33333ZM3.33333 13.333H12.6667V6.66634H3.33333V13.333ZM3.33333 5.33301H12.6667V3.99967H3.33333V5.33301Z"
+                      fill="#4856D8"
+                    />
+                  </g>
                 </svg>
-                {date}
+
+                {slicedDate}
               </div>
             </div>
           </CardActions>
