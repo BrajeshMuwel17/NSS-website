@@ -23,8 +23,9 @@ import List from '@mui/material/List';
 import Drawer from '@mui/material/Drawer';
 import Slide from '@mui/material/Slide';
 
-
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link } from 'react-scroll';
+
 
 import { ThemeProvider, createTheme, useTheme } from "@mui/material/styles";
 import Activities from "./activities";
@@ -64,6 +65,10 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+  const handleScrollDown = (page) => {
+    const pageString = page.toLowerCase().replace(' ', '-');
+    document.getElementsByClassName(pageString)[0].scrollIntoView({behavior:'smooth'});  
+  };
 
   return (
     <AppBar
@@ -86,20 +91,23 @@ function ResponsiveAppBar() {
         }}
       >
         <Toolbar disableGutters sx={{ justifyContent: "center" }}>
-          <img
-            src={nsslogo} // Update the path to your image
-            alt="Logo"
-            style={{
-              height: "60px",
-              display: { xs: "none", md: "flex" },
-              marginRight: 8,
-            }}
-          />
+          <a href="/">
+
+            <img
+              src={nsslogo} // Update the path to your image
+              alt="Logo"
+              style={{
+                height: "60px",
+                display: { xs: "none", md: "flex" },
+                marginRight: 8,
+              }}
+            />
+          </a>
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               ml: 3,
@@ -153,7 +161,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{
                   color: isScrolled ? "#333" : "white",
-                  fontSize: "0.8rem",
+                  fontSize: "1rem",
                   marginRight: index !== pages.length - 1 ? "8px" : 0, // Reduce the margin between buttons
                 }}
               >
@@ -209,7 +217,7 @@ function ResponsiveAppBar() {
                 <List>
                   {pages.map((page) => (
                     <ListItem key={page} disablePadding>
-                      <ListItemButton>
+                      <ListItemButton onClick={() => handleScrollDown(page)}>
                         <ListItemText primary={page} />
                       </ListItemButton>
                     </ListItem>
@@ -237,7 +245,7 @@ function NavBar({ posts, members }) {
             width: "100%",
             height: "100%",
             background: `url(${banner}) center/cover`,
-            zIndex: -1,
+            zIndex: 1,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -326,8 +334,8 @@ function NavBar({ posts, members }) {
               }}
             />
             We invite all interested Faculty Members, Officers, Staff Members and
-            Students to join NSS Cell as a Volunteer. Join
-            <a href="https://www.google.com/"> here</a>.
+            Students to join NSS Cell as a Volunteer.
+            Join <a href="https://forms.office.com/pages/responsepage.aspx?id=jacKheGUxkuc84wRtTBwHC4GMrMZVLFLrBQexzEsxFZUM1E4SDFQVTg4TkVGUDRWTjhMU09ZTTFVVy4u" target="_blank" style={{ color: 'orange', textDecoration: 'underline' }} > here</a>.
           </Typography>
         </Box>
 

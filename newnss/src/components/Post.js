@@ -1,7 +1,7 @@
 import './Post_style.css';
 import { useState } from 'react';
 import axios from 'axios';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Post = () => {
 
@@ -15,9 +15,10 @@ const Post = () => {
     const [email,setEmail] = useState(localStorage.getItem('email'));
     const [password,setPassword] = useState(localStorage.getItem('password'));
 
+    const navigate = useNavigate();
+
     const handleSubmit = () => {
         console.log('hi');
-        Navigate('/');
         console.log(title, content, hashtag, date, instalink, twitterlink, imagelink[0])
         const formData = new FormData();
         formData.append('title', title);
@@ -38,11 +39,13 @@ const Post = () => {
         }
         axios.post('http://localhost:3000/posts', formData, config)
             .then(response => {
+                console.log(response.data);
+                navigate('/');
             })
             .catch(error => {
                 console.error(error);
             });
-            
+        
     }
 
     const handleFileChange = (event) => {

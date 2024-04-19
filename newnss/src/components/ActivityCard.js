@@ -35,6 +35,8 @@ import { useState } from "react";
 function RecipeReviewCard({ title, date, content, imagelink ,hashtag,instalink,twitterlink}) {
   const [expanded, setExpanded] = useState(false);
 
+  // console.log(date);
+
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -60,6 +62,7 @@ function RecipeReviewCard({ title, date, content, imagelink ,hashtag,instalink,t
     <div
       style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}
     >
+      {/* <div>{date}</div> */}
       <Card
         sx={{
           display: "flex",
