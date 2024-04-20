@@ -16,13 +16,13 @@ function App() {
 
   const [members, setMembers] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3000/members').then((response) => {
+    axios.get('https://nss-website.onrender.com/members').then((response) => {
       setMembers(response.data);
     });
   }, []);
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3000/posts').then((response) => {
+    axios.get('https://nss-website.onrender.com/posts').then((response) => {
       setPosts(response.data);
     });
   }, []);

@@ -37,7 +37,7 @@ const Post = () => {
         for (var key of formData.entries()) {
             console.log(key[0] + ', ' + key[1]);
         }
-        axios.post('http://localhost:3000/posts', formData, config)
+        axios.post('https://nss-website.onrender.com/posts', formData, config)
             .then(response => {
                 console.log(response.data);
                 navigate('/');

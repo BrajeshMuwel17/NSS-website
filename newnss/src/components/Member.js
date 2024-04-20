@@ -29,7 +29,7 @@ const Member = () => {
         for (var key of formData.entries()) {
             console.log(key[0] + ', ' + key[1]);
         }
-        axios.post('http://localhost:3000/members', formData, config)
+        axios.post('https://nss-website.onrender.com/members', formData, config)
             .then(response => {
                 console.log(response.data);
                 navigate('/'); // Use navigate function to navigate to '/'
