@@ -14,6 +14,9 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
+// import RecipeReviewCard from "./RecipeReviewCard";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 // import FavoriteIcon from '@mui/icons-material/Favorite';
 // import ShareIcon from '@mui/icons-material/Share';
 // import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -64,6 +67,8 @@ function RecipeReviewCard({
       setDisplayContent(content.substring(0, 200));
     }
   };
+
+  
 
   const slicedDate = date ? date.slice(0, 10) : '';
 
@@ -197,13 +202,26 @@ function RecipeReviewCard({
 }
 
 const ActivityCards = ({ posts }) => {
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 5;
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+  };
+
+
   console.log(posts);
   return (
-    <div className="ActivityCards">
-      {posts &&
-        posts.map((post) => (
-          // <ActivityCard key={post.id} {...post} />
+     <div className="ActivityCards">
+      {currentPosts &&
+        currentPosts.map((post) => (
           <RecipeReviewCard
+            key={post.id}
             title={post.title}
             date={post.date}
             content={post.content}
@@ -213,6 +231,14 @@ const ActivityCards = ({ posts }) => {
             twitterlink={post.twitterlink}
           />
         ))}
+       <Stack spacing={2} style={{ marginTop: "20px" ,alignItems:"center" }}>
+        <Pagination
+          count={Math.ceil(posts.length / postsPerPage)}
+          page={currentPage}
+          onChange={handleChange}
+          // color="primary"
+        />
+      </Stack>
     </div>
   );
 };
