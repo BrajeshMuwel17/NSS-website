@@ -16,7 +16,7 @@ const cors = require('cors');
 
 
 var corsOptions = {
-    origin: "https://nss-website-1.onrender.com",
+    origin: "http://localhost:3000",
     credentials: true,
   };
   
