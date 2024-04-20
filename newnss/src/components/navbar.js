@@ -76,7 +76,7 @@ function ResponsiveAppBar() {
       position="fixed"
       sx={{
         backgroundColor: isScrolled
-          ? "rgba(255, 255, 255, 0.5)"
+          ? "rgba(255, 255, 255, 1)"
           : "transparent",
         transition: "background-color 0.2s",
         borderBottom: isScrolled ? "1px solid #ddd" : "none",
@@ -187,7 +187,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color={isScrolled ? "#333" : "inherit"}
             >
               <MenuIcon />
             </IconButton>
