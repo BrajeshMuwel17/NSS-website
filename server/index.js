@@ -16,12 +16,13 @@ const cors = require('cors');
 
 
 var corsOptions = {
-    origin: "https://nss-yw6l.onrender.com/",
+    origin: "nss-yw6l.onrender.com/",
     credentials: true,
   };
   
   
-  app.use(cors(corsOptions));
+  // app.use(cors(corsOptions));
+  app.use(cors());
 
 const connectDB = async () => {
     let connection;
