@@ -25,19 +25,19 @@ This website serves as the official platform for IIT Guwahati's National Service
 ## Screenshots
 
 **Home Page**
-![image](/images/homePage.png)
+![image](https://i.postimg.cc/TPVPJHvk/Screenshot-2024-06-28-183050.png)
 
 **Log-In Page**
-![image](/images/LoginPage.png)
+![image](https://i.postimg.cc/4nRc3H6y/Login-Page.png)
 
 **Welcome Page**
-![image](/images/welcomePage.png)
+![image](https://i.postimg.cc/sfqJ72PD/welcome-Page.png)
 
 **Add Post Page**
-![image](/images/addPostPage.png)
+![image](https://i.postimg.cc/zG1S2PPs/add-Post-Page.png)
 
 **Add Member Page**
-![image](/images/addMemberPage.png)
+![image](https://i.postimg.cc/VLtWRc49/add-Member-Page.png)
 
 
 # Run server locally
