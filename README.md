@@ -5,7 +5,7 @@ This website serves as the official platform for IIT Guwahati's National Service
 
 ## Features
 
-- Login for NSS volunteers
+<!-- - Login for NSS volunteers
 - Add activities option for NSS voluteers
 - Facility to comment
 - Discussion forum
@@ -14,7 +14,7 @@ This website serves as the official platform for IIT Guwahati's National Service
 - Mobile responsiveness
 - Search using TechStacks
 - Ratings for projects
-- Anti-spam engine
+- Anti-spam engine -->
 
 ## Tech Stack
 
@@ -151,12 +151,11 @@ REACT_APP_FRONTEND_URL
    - Avatar and chats for profile image and direct messaging.
    - Side navigation bar for seamless website navigation. -->
 
-2. **Log-In for NSS volunteers onlt:**
+2. **Log-In for NSS volunteers only:**
    - Clicking the Log-In button on the Home page redirects volunteers to the Log-In page.
    - After Logging, volunteers are redirected to the welcome page.
 
 3. **Welcome Page:**
-   - 
 
 4. **Add Post Page:**
 
