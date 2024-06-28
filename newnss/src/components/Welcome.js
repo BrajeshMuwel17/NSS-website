@@ -41,7 +41,6 @@ function Welcome() {
 if (email === 'aryan.arya@iitg.ac.in' && password === 'nss') {
     return (
         <div className="welcome-background">
-            <div className="background-image"></div>
             <div className='welcome-content'>
                 <h1>Welcome to our website!</h1>
                 <p>Thank you for visiting. We hope you enjoy your stay.</p>
