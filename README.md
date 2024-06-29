@@ -31,7 +31,7 @@ This website serves as the official platform for IIT Guwahati's National Service
 ![image](https://i.postimg.cc/4nRc3H6y/Login-Page.png)
 
 **Welcome Page**
-![image](https://i.postimg.cc/sfqJ72PD/welcome-Page.png)
+![image](https://i.postimg.cc/tJPj9vWN/welcomepage-nss.jpg)
 
 **Activities**
 ![image](https://i.postimg.cc/cLz8zr1y/Screenshot-2024-06-29-142708.png)
@@ -49,7 +49,7 @@ This website serves as the official platform for IIT Guwahati's National Service
 ![image](https://i.postimg.cc/zG1S2PPs/add-Post-Page.png)
 
 **Add Member Page**
-![image](https://i.postimg.cc/VLtWRc49/add-Member-Page.png)
+![image](https://i.postimg.cc/nLzfXhqz/addmember-nss.jpg)
 
 
 # Run server locally
