@@ -25,13 +25,25 @@ This website serves as the official platform for IIT Guwahati's National Service
 ## Screenshots
 
 **Home Page**
-![image](https://i.postimg.cc/TPVPJHvk/Screenshot-2024-06-28-183050.png)
+![image](https://i.postimg.cc/DyXVGNWr/Screenshot-2024-06-29-144847.png)
 
 **Log-In Page**
 ![image](https://i.postimg.cc/4nRc3H6y/Login-Page.png)
 
 **Welcome Page**
 ![image](https://i.postimg.cc/sfqJ72PD/welcome-Page.png)
+
+**Activities**
+![image](https://i.postimg.cc/cLz8zr1y/Screenshot-2024-06-29-142708.png)
+
+**our Team**
+![image](https://i.postimg.cc/d0MVddt1/Screenshot-2024-06-29-143958.png)
+
+**About**
+![image](https://i.postimg.cc/cHFWD8Zf/Screenshot-2024-06-29-144247.png)
+
+**Contact Us**
+![image](https://i.postimg.cc/Gmv1WfdL/Screenshot-2024-06-29-144513.png)
 
 **Add Post Page**
 ![image](https://i.postimg.cc/zG1S2PPs/add-Post-Page.png)
@@ -150,16 +162,17 @@ REACT_APP_FRONTEND_URL
    - Communities Page lists user's groups.
    - Avatar and chats for profile image and direct messaging.
    - Side navigation bar for seamless website navigation. -->
+   
 
-2. **Log-In for NSS volunteers only:**
+3. **Log-In for NSS volunteers only:**
    - Clicking the Log-In button on the Home page redirects volunteers to the Log-In page.
    - After Logging, volunteers are redirected to the welcome page.
 
-3. **Welcome Page:**
+4. **Welcome Page:**
 
-4. **Add Post Page:**
+5. **Add Post Page:**
 
-5. **Add Member Page:**
+6. **Add Member Page:**
 
 
 # Authors
