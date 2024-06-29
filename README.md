@@ -176,7 +176,7 @@ REACT_APP_FRONTEND_URL
    - Allows NSS heads and volunteers to create new posts. This can include announcements, event information, or general updates.
 6. **Add Member Page:**
    - Includes forms for entering member details such as name, role, contact information and other info.
-##Note
+### Note
 1. Access to the login page is restricted to authorized NSS team members only. So login button is not publicly available.
 # Authors
 -[@Brajesh Muwel](https://github.com/BrajeshMuwel17)
