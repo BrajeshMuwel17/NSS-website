@@ -171,11 +171,11 @@ REACT_APP_FRONTEND_URL
    - After Logging, volunteers are redirected to the welcome page.
 
 4. **Welcome Page:**
-  -  This page appears after logging in,options available include 'Add Members', 'Create a Post', and 'Logout'
+   -  This page appears after logging in,options available include 'Add Members', 'Create a Post', and 'Logout'
 5. **Add Post Page:**
-  - Allows NSS heads and volunteers to create new posts. This can include announcements, event information, or general updates.
+   - Allows NSS heads and volunteers to create new posts. This can include announcements, event information, or general updates.
 6. **Add Member Page:**
-  - Includes forms for entering member details such as name, role, contact information and other info.
+   - Includes forms for entering member details such as name, role, contact information and other info.
 
 # Authors
 -[@Brajesh Muwel](https://github.com/BrajeshMuwel17)
