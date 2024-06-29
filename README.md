@@ -4,7 +4,14 @@
 This website serves as the official platform for IIT Guwahati's National Service Scheme (NSS) unit. Here, volunteers can upload details of their social work activities, events, and other related information. The site aims to document and showcase the community service efforts undertaken by NSS volunteers, providing updates on ongoing projects, upcoming events, and achievements. It also serves as a resource for information about NSS programs, guidelines, and how to get involved, fostering a spirit of volunteerism and social responsibility within the IITG community.
 
 ## Features
-
+- **Member Exclusive Login:** Secure login functionality for NSS team members to access administrative features.
+- **Dynamic Home Page:** Features an inviting banner and direct calls-to-action for joining the NSS.
+- **Comprehensive Navigation Bar:** Easy access to various sections including Objectives, Activities, Our Team, About, and Contact.
+- **Activities Showcase:** Categorized display of past and ongoing activities with detailed descriptions and filtering options.
+- **Team Introduction:** Detailed profiles of the program coordinators and officers to familiarize users with the NSS team.
+- **Real-Time Updates:** Allows NSS heads to post latest announcements and updates in real-time.
+- **Member Management:** Admin functionality to add and manage team member profiles efficiently.
+- **Mobile Responsiveness:** The website is fully optimized for mobile devices, ensuring a seamless user experience on smartphones and tablets.
 <!-- - Login for NSS volunteers
 - Add activities option for NSS voluteers
 - Facility to comment
