@@ -178,9 +178,11 @@ REACT_APP_FRONTEND_URL
 # Authors
 -[@Brajesh Muwel](https://github.com/BrajeshMuwel17)
 
+-[@daksharora01](https://github.com/daksharora01)
+
 -[@DeepakPrajapati25](https://github.com/DeepakPrajapati25)
 
--[@daksharora01](https://github.com/daksharora01)
+-[@Arora-Vidhi](https://github.com/Arora-Vidhi)
 
 -[@dishantttt](https://github.com/dishantttt)
 
@@ -189,7 +191,5 @@ REACT_APP_FRONTEND_URL
 -[@ayushpatidar18](https://github.com/ayushpatidar18)
 
 -[@Aryan Arya](https://github.com/Arya-n-101)
-
--[@Arora-Vidhi](https://github.com/Arora-Vidhi)
 
 -[@dhruv-garg-14](https://github.com/dhruv-garg-14)
