@@ -162,18 +162,20 @@ REACT_APP_FRONTEND_URL
    - Communities Page lists user's groups.
    - Avatar and chats for profile image and direct messaging.
    - Side navigation bar for seamless website navigation. -->
-   
-
+   - The home page features a large, vibrant banner with the message "BRINGING THE CHANGE TOGETHER." It showcases NSS volunteers engaged in activities, emphasizing the community and teamwork.
+   - The top navigation bar includes links to different sections: Objectives, Activities, Our Team, About, and Contact. This helps users easily navigate through the website.
+    
+  
 3. **Log-In for NSS volunteers only:**
    - Clicking the Log-In button on the Home page redirects volunteers to the Log-In page.
    - After Logging, volunteers are redirected to the welcome page.
 
 4. **Welcome Page:**
-
+  -  This page appears after logging in,options available include 'Add Members', 'Create a Post', and 'Logout'
 5. **Add Post Page:**
-
+  - Allows NSS heads and volunteers to create new posts. This can include announcements, event information, or general updates.
 6. **Add Member Page:**
-
+  - Includes forms for entering member details such as name, role, contact information and other info.
 
 # Authors
 -[@Brajesh Muwel](https://github.com/BrajeshMuwel17)
@@ -184,11 +186,11 @@ REACT_APP_FRONTEND_URL
 
 -[@Arora-Vidhi](https://github.com/Arora-Vidhi)
 
+-[@ayushpatidar18](https://github.com/ayushpatidar18)
+
 -[@dishantttt](https://github.com/dishantttt)
 
 -[@Mysteriux](https://github.com/Mysteriux)
-
--[@ayushpatidar18](https://github.com/ayushpatidar18)
 
 -[@Aryan Arya](https://github.com/Arya-n-101)
 
