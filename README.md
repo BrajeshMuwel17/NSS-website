@@ -200,6 +200,8 @@ REACT_APP_FRONTEND_URL
 
 -[@Mysteriux](https://github.com/Mysteriux)
 
+-[@jayant09-coder](https://github.com/jayant09-coder)
+
 -[@Aryan Arya](https://github.com/Arya-n-101)
 
 -[@dhruv-garg-14](https://github.com/dhruv-garg-14)
