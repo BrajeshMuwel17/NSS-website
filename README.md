@@ -185,7 +185,7 @@ REACT_APP_FRONTEND_URL
    - Includes forms for entering member details such as name, role, contact information and other info.
 ### Note
 1. Access to the login page is restricted to authorized NSS team members only. So login button is not publicly available.
-# Authors
+# Authors:
 -[@Brajesh Muwel](https://github.com/BrajeshMuwel17)
 
 -[@daksharora01](https://github.com/daksharora01)
