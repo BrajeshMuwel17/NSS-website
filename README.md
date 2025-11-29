@@ -188,7 +188,7 @@ REACT_APP_FRONTEND_URL
 # Authors:
 -[@Brajesh Muwel](https://github.com/BrajeshMuwel17)
 
--[@daksharora01](https://github.com/daksharora01)
+-[@Sakshi-Kumari-113](https://github.com/Sakshi-Kumari-113)
 
 -[@DeepakPrajapati25](https://github.com/DeepakPrajapati25)
 
