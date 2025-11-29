@@ -192,6 +192,8 @@ REACT_APP_FRONTEND_URL
 
 -[@DeepakPrajapati25](https://github.com/DeepakPrajapati25)
 
+-[@DarshanPatidar11](https://github.com/DarshanPatidar11)
+
 -[@ayushpatidar18](https://github.com/ayushpatidar18)
 
 -[@Mysteriux](https://github.com/Mysteriux)
