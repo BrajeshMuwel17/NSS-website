@@ -58,6 +58,9 @@ This website serves as the official platform for IIT Guwahati's National Service
 **Add Member Page**
 ![image](https://i.postimg.cc/nLzfXhqz/addmember-nss.jpg)
 
+**Volunteer Page**
+![image](https://i.postimg.cc/Gm5GGRWn/Screenshot-2025-11-29-230821.png)
+
 
 # Run server locally
 
